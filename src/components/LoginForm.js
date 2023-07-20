@@ -1,10 +1,13 @@
 import React from 'react';
+import robot from '../assets/robot.png'
+import SignUpform from './SignUpform';
 
 
 const LoginForm = () => {
     return (
-        <div >
-            <div className="card flex-shrink-0 w-96 max-w-xl shadow-2xl bg-base-100">
+        <div className=' grid grid-cols-1 lg:grid-cols-2' >
+            <div><img src={robot} alt="" /></div>
+            <div className=" lg:my-60 lg:mx-40 card flex-shrink-0 sm:w-full max-w-xl shadow-2xl bg-base-100">
       <div className="card-body">
         <div className="form-control">
           <label className="label">
@@ -31,7 +34,7 @@ const LoginForm = () => {
 <dialog id="signup_modal" className="modal">
   <form method="dialog" className="modal-box">
     <button className="btn btn-sm btn-circle btn-ghost  absolute right-2 top-2">✕</button>
-    {/* <Signup></Signup> */}
+    <SignUpform></SignUpform>
   </form>
 </dialog>
            </p></div>

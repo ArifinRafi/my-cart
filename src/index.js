@@ -15,8 +15,8 @@ export const navLinks = [
   {id: "home",
 title: "Home"}, 
   {id: "Login",
-title: "SignUp"}, 
-  {id: "SignUp",
+title: "Login"}, 
+  {id: "Login",
 title: "Admin"},
 {id: "Cart",
 title: "Cart"}  
