@@ -2,7 +2,7 @@ import React from 'react';
 
 const Service = () => {
     return (
-        <section className="overflow-hidden sm:grid sm:grid-cols-2 rounded-2xl">
+        <section className="overflow-hidden sm:grid grid-cols-1 lg:grid-cols-2 rounded-2xl">
   <div className="p-8 md:p-12 lg:px-16 lg:py-24 bg-base-100">
     <div
       className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"

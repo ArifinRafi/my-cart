@@ -6,9 +6,8 @@ import Footer from '../components/Footer';
 const Login = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            
             <LoginForm></LoginForm>
-            <Footer></Footer>
             
         </div>
     );
