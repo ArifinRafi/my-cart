@@ -5,10 +5,7 @@ import SignUpform from './SignUpform';
 
 const LoginForm = () => {
     return (
-        <div className=' grid grid-cols-1 lg:grid-cols-2' >
-            <div><img src={robot} alt="" /></div>
-            <div className=" lg:my-60 lg:mx-40 card flex-shrink-0 sm:w-full max-w-xl shadow-2xl bg-base-100">
-      <div className="card-body">
+      <div className="card-body bg-base-200 rounded-xl">
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -25,7 +22,7 @@ const LoginForm = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className = "btn text-white bg-gradient-to-r  from-red-500 to-blue-700 shadow-2xl">Login</button>
+          <button className = "btn text-white bg-gradient-to-r  from-purple-500 to-purple-700 shadow-2xl">Login</button>
         </div>
         <div><p>Don't have an account?
           {/* You can open the modal using ID.showModal() method */}
@@ -39,8 +36,6 @@ const LoginForm = () => {
 </dialog>
            </p></div>
       </div>
-    </div>
-        </div>
     );
 };
 

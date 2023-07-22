@@ -28,7 +28,11 @@ const SignUpform = () => {
           </label>
           <input type="password" placeholder="Password" className="input input-bordered" />
         </div>
-        <button className='btn text-white bg-gradient-to-r  from-red-500 to-blue-700 shadow-2xl mt-5'>Sign Up</button>
+
+        <div className='grid justify-items-center'>
+        <button className='btn text-white bg-gradient-to-r flex items-center  from-purple-500 to-purple-800 shadow-2xl mt-5'>Sign Up</button>
+        </div>
+        
             
         </div>
     );

@@ -1,8 +1,10 @@
 import React from 'react';
+import mahbub from '../assets/mahbub.jpg'
+import labib from '../assets/labib.jpg'
 
 const Reviews = () => {
     return (
-        <section class="text-neutral-700 dark:text-neutral-300 my-20">
+        <section class="text-neutral-700 dark:text-neutral-300 py-12 ">
   <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
     <h3 class="mb-6 text-3xl font-bold">Testimonials</h3>
     <p class="mb-6 pb-2 md:mb-12 md:pb-0">
@@ -19,12 +21,13 @@ const Reviews = () => {
         class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
         <div class="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
         <div
-          class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+          class="mx-auto -mt-12 w-20 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" />
+            src={mahbub} />
         </div>
         <div class="p-6">
-          <h4 class="mb-4 text-2xl font-semibold">Maria Smantha</h4>
+          <h4 class=" text-2xl font-semibold">Mahbub Ul Haque</h4>
+          <p className='mb-4 text-sm'>Embedded System Engineer, Palki Motors</p>
           <hr />
           <p class="mt-4">
             <svg
@@ -50,7 +53,7 @@ const Reviews = () => {
         <div
           class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
           <img
-            src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp" />
+            src={labib} />
         </div>
         <div class="p-6">
           <h4 class="mb-4 text-2xl font-semibold">Lisa Cudrow</h4>

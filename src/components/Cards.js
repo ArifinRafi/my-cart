@@ -11,8 +11,23 @@ const Cards = () => {
     return (
 
         <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center my-20'>
-            <div className="card w-96 my-12 h-8/10 bg-base-100 shadow-xl">
-            <figure><img src={pixi} alt="" /></figure>
+            <div className="card w-96 my-12  h-5/6  bg-base-100 shadow-xl">
+            <figure><img src={pixi} alt="" className='w-full h-4/8'/></figure>
+            <div className="card-body ">
+                
+                <h2 className="card-title justify-center">Pixi Version 1.0</h2>
+               
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+             
+            <div className="card-actions justify-around">
+            <button className="btn btn-primary">Buy Now</button>
+            <NavLink to='/Cart'> <button className='btn btn-primary'>Add to Cart</button> </NavLink>
+            </div>
+            </div>
+            </div>
+
+            <div className="card w-96 my-12  h-5/6  bg-base-100 shadow-xl">
+            <figure><img src={duburi} alt="" className='w-full h-4/8'/></figure>
             <div className="card-body ">
                 
                 <h2 className="card-title justify-center">Pixi Version 1.0</h2>
@@ -27,12 +42,14 @@ const Cards = () => {
             </div>
 
 
-
-            <div className="card w-96  my-12 bg-base-100 shadow-xl" id='duburi'>
-            <figure><img src={duburi} alt="" /></figure>
-            <div className="card-body">
-             <h2 className="card-title justify-center">UnderRov 2.0</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card w-96 my-12  h-5/6  bg-base-100 shadow-xl">
+            <figure><img src={pixi} alt="" className='w-full h-4/8'/></figure>
+            <div className="card-body ">
+                
+                <h2 className="card-title justify-center">Pixi Version 1.0</h2>
+               
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+             
             <div className="card-actions justify-around">
             <button className="btn btn-primary">Buy Now</button>
             <NavLink to='/Cart'> <button className='btn btn-primary'>Add to Cart</button> </NavLink>
@@ -40,22 +57,11 @@ const Cards = () => {
             </div>
             </div>
 
+        
 
 
 
-            <div className="card w-96 h-8/10 my-12 bg-base-100 shadow-xl">
-            <figure><img src={pixi} alt="Shoes" /></figure>
-            <div className="card-body">
-             <h2 className="card-title justify-center">Pixi Version 2.0</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-around">
-            <button className="btn flex  btn-primary">Buy Now</button>
-            <button className="btn btn-primary">
-            <NavLink to='/Cart'> <button className='btn btn-primary'>Add to Cart</button> </NavLink>
-            </button>
-            </div>
-            </div>
-            </div>
+            
         </div>
         
     );

@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../assets/logo.svg'
+import logo from '../assets/roboway_logo.png'
 
 const Footer = () => {
     return (
-        <footer className="footer p-10  bg-black text-base-content">
+        <footer className="footer p-10 bg-opacity-40  bg-purple-800 bg-opacity-60 text-white ">
   <div>
-    <img src={logo} alt="" />
-    <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+    <img src={logo} className='w-[144px] h-[50px]' alt="" />
+    <p>All rights reserved by Roboway Technologies 2023</p>
   </div> 
   <div>
     <span className="footer-title">Services</span> 

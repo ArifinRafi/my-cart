@@ -17,7 +17,7 @@ const Hero = () => {
     <div className=''>
     <img src={heroimg} className=" rounded-lg shadow-2xl w-[100%] h-[100%] relative z-[5]" /> 
 
-    <div className='absolute  z-[0] w-[50%] h-[108%] top-0 lg:bg-gradient-to-l from-blue-300'/>  
+    {/* <div className='absolute  z-[0] w-[50%] h-[108%] top-0 lg:bg-gradient-to-l from-blue-300'/>   */}
       
 
         </div>
