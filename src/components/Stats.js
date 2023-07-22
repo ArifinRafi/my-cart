@@ -16,7 +16,7 @@ const Stats = () => {
             
         // </div>
 
-        <div className="shadow  grid grid-cols-1 lg:grid-cols-3 my-20 bg-black">
+        <div className="shadow  grid grid-cols-1 lg:grid-cols-3 my-10 bg-base-200">
   
   <div className="stat place-items-center">
     <div className="stat-title">Clients</div>
