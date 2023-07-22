@@ -56,7 +56,8 @@ const Reviews = () => {
             src={labib} />
         </div>
         <div class="p-6">
-          <h4 class="mb-4 text-2xl font-semibold">Lisa Cudrow</h4>
+          <h4 class="text-2xl font-semibold">Labib Muhannad</h4>
+          <p className=' text-sm'>CEO, Eventizer Limited</p>
           <hr />
           <p class="mt-4">
             <svg
