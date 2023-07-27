@@ -1,12 +1,24 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {navLinks} from '../index'
 import logo from '../assets/roboway_logo.png'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
 import '../css/navbar.css'
+import { AuthContext } from '../contexts/AuthProvider/AuthProvider';
 
 const Navbar = () => {
+    const [loggedIn, setloggedIn] = useState(null);
+    const {user, logout} = useContext(AuthContext);
     const [toggle, setToggle] = useState(false);
+
+    
+
+    const handleLogout = () => {
+        logout()
+        .then(()=> {})
+        .catch(error => console.error(error));
+    }
+
     return (
         <nav className='bg-purple-800 bg-opacity-50' >
 
@@ -26,7 +38,13 @@ const Navbar = () => {
             
         </li>
     ))}
+
+
+    
 </ul>
+<p className='px-10 flex justiy-items-end'>{user?.email}</p>
+<button onClick={handleLogout} className='btn'>Log Out</button>
+
 
         </div>
            {/* navbar for small devices */}
@@ -50,8 +68,12 @@ const Navbar = () => {
     
     
                     </li>
+                
             ))}
+            <p className='px-10 flex justiy-items-end'>{user?.email}</p>
+<button onClick={handleLogout} className='btn'>Log Out</button>
             </ul>
+            
         </div>
     </div>
     </div>
