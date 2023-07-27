@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import LoginForm from './components/LoginForm';
 import Cart from './pages/Cart';
 import Main from './Layout/Main'
+import Signup from './pages/Signup'
 
 
 
@@ -17,7 +18,8 @@ function App() {
     {path:'/', element:<Home></Home>},
     {path:'/Home', element:<Home></Home>},
     {path:'/Login', element:<Login></Login>},
-    {path:'/Cart', element:<Cart></Cart>}
+    {path:'/Cart', element:<Cart></Cart>},
+    {path:'/Signup', element: <Signup></Signup>}
     
   ]}
     

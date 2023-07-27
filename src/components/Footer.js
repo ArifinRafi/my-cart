@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer p-10 bg-opacity-40  bg-purple-800 bg-opacity-60 text-white ">
   <div>
-    <img src={logo} className='w-[144px] h-[50px]' alt="" />
+    <img src={logo} className='w-[145px] h-[45px]' alt="" />
     <p>All rights reserved by Roboway Technologies 2023</p>
   </div> 
   <div>
