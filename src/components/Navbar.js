@@ -5,6 +5,7 @@ import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
 import '../css/navbar.css'
 import { AuthContext } from '../contexts/AuthProvider/AuthProvider';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [loggedIn, setloggedIn] = useState(null);
@@ -23,45 +24,39 @@ const Navbar = () => {
         <nav className='bg-purple-800 bg-opacity-50' >
 
             {/* navbar for pc view */}
-        <div className='bg-opacity-40 sticky top-0 z-50 backdrop-blur-lg rounded shadow-2xl lg:w-full sm:flex hidden bg-black  navbar bg-purple-800  h-20'>
+        <div className='bg-opacity-40 fixed top-0 z-50 backdrop-blur-lg rounded shadow-2xl lg:w-full sm:flex hidden bg-black  navbar bg-purple-800  h-20'>
 
         <img className='w-[145px] h-[45px]' src={logo} alt="" />
 
-<ul className='list-none flex justify-start px-8 items-center flex-1'>
+<ul className='list-none flex justify-start px-8 items-center flex-1 text-white'>
 
-    {navLinks.map((nav, index) => (
-        <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] text-white mx-3 lg:mx-4`}>
-            <a href={`${nav.id}`}>
-                {nav.title}
-            </a>
-            
-            
-        </li>
-    ))}
-
-
-    
+   <li className='flex justify-evenly cursor-pointer text-[16px] gap-5 font-semibold'>
+   <Link to='/' >Home</Link>
+    <Link to='/'>Services</Link>
+    <Link to='/'>Products</Link>
+    <Link to='/Signup'>Sign Up</Link>
+    <Link to='/Login'>Login</Link>
+    <Link to='/'>About</Link>
+   </li> 
 </ul>
-<p className='px-10 flex justiy-items-end'>{user?.email}</p>
-<button onClick={handleLogout} className='btn'>Log Out</button>
-
-
-        </div>
+{/* <p className='px-10 flex justiy-items-end'>{user?.email}</p>
+<button onClick={handleLogout} className='btn bg-purple-700 text-white hover:bg-purple-600 rounded '>Log Out</button> */}
+    </div>
            {/* navbar for small devices */}
-        <div className='grid sm:hidden grid-col-2'>
-        <div className='grid justify-items-center '>
-            <img src={logo} className='w-[200px] mobileLogo' alt="" />
+        <div className='grid sm:hidden grid-col-2  '>
+        <div className='grid justify-items-center'>
+            <img src={logo} className='w-[200px] mobileLogo ' alt="" />
         </div>
 
         <div className='sm:hidden flex flex-1 justify-end items-center px-5 '>
         
         <img src={toggle ? close : menu} alt="menu"
         className=' menupos w-[28px] h-[28px]  object-contain' onClick={()=> setToggle((prev)=>!prev)} />
-            <div className={`${toggle ? 'flex' : 'hidden'}  bg-purple-800 bg-opacity-50 right-0 w-full fixed h-1/4  top-20 absolute  min-w-[140px] rounded-xl sidebar`}>
+            <div className={`${toggle ? 'flex' : 'hidden'}   bg-purple-800 bg-opacity-50 right-0 w-full fixed h-2/4  top-20 absolute  min-w-[140px] rounded-xl sidebar`}>
             <ul className='list-none flex flex-col justify-start px-8 items-center flex-1'>
 
             {navLinks.map((nav, index) => (
-                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] text-white mb-5 lg:mx-4`}>
+                <li key={nav.id} className={`font-poppins font-normal cursor-pointer font-semibold text-[16px] text-white mb-5 lg:mx-4`}>
     <a href={`${nav.id}`}>
         {nav.title}
     </a>
@@ -70,8 +65,10 @@ const Navbar = () => {
                     </li>
                 
             ))}
-            <p className='px-10 flex justiy-items-end'>{user?.email}</p>
-<button onClick={handleLogout} className='btn'>Log Out</button>
+
+                {/* Button for signin and signout */}
+            {/* <p className='px-10 flex justiy-items-end'>{user?.email}</p>
+<button onClick={handleLogout} className='btn'>Log Out</button> */}
             </ul>
             
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import shield_cover from '../assets/smart_home.jpg'
 
 const Service = () => {
     return (
@@ -21,9 +22,9 @@ const Service = () => {
       <div className="mt-4 md:mt-8">
         <a
           href="#"
-          className="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400 my-12"
+          className="inline-block rounded bg-purple-800 px-12 py-3 text-sm font-medium text-white transition hover:bg-purple-700 focus:outline-none focus:ring focus:ring-yellow-400 my-12"
         >
-          Get Started Today
+          Let's explore with us!
         </a>
       </div>
     </div>
@@ -31,8 +32,8 @@ const Service = () => {
 
   <img
     alt="Student"
-    src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-    className="h-56 w-full object-cover sm:h-full"
+    src={shield_cover}
+    className=" w-full opacity-80 h-full"
   />
 </section>
     );
