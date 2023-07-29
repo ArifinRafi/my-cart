@@ -7,6 +7,7 @@ import Cart from './pages/Cart';
 import Main from './Layout/Main'
 import Signup from './pages/Signup'
 import OrdersForm from './pages/OrdersForm';
+import Cards from './components/Cards';
 
 
 
@@ -22,6 +23,7 @@ function App() {
     {path:'/Cart', element:<Cart></Cart>},
     {path:'/Signup', element: <Signup></Signup>},
     {path:'/OrderForm', element: <OrdersForm></OrdersForm>},
+    {path:'/Products', element: <Cards></Cards>},
 
     
   ]}

@@ -6,3 +6,6 @@
     position: relative;
     top: 20%;
 }
+.transparent-bg{
+    background-color: transparent;
+}
