@@ -12,8 +12,8 @@ const Cards = () => {
     return (
 
         <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center my-20'>
-            <div className="card w-96 my-12  h-5/6  bg-base-100 shadow-xl relative">
-            <figure><img src={pixi} alt="" className='w-full '/></figure>
+            <div className="lg:card w-96 my-12  h-5/6  bg-base-100 shadow-xl">
+            <figure><img src={pixi} alt="" className='w-full rounded'/></figure>
             <div className="card-body ">
                 
                 <h2 className="card-title justify-center">Pixi Version 1.0</h2>
