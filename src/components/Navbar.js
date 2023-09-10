@@ -28,7 +28,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='bg-purple-800 bg-opacity-50' >
+        <nav className='bg-purple-800 bg-opacity-50 my-20' >
 
             {/* navbar for pc view */}
         <div className='bg-opacity-40 fixed top-0 z-50 backdrop-blur-lg rounded shadow-2xl lg:w-full sm:flex hidden bg-black  navbar bg-purple-800  h-20'>

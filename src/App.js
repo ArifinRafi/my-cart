@@ -8,6 +8,7 @@ import Main from './Layout/Main'
 import Signup from './pages/Signup'
 import OrdersForm from './pages/OrdersForm';
 import Cards from './components/Cards';
+import CustomerForm from './components/CustomerForm';
 
 
 
@@ -24,6 +25,7 @@ function App() {
     {path:'/Signup', element: <Signup></Signup>},
     {path:'/OrderForm', element: <OrdersForm></OrdersForm>},
     {path:'/Products', element: <Cards></Cards>},
+    {path:'/Form', element: <CustomerForm></CustomerForm>}
 
     
   ]}
