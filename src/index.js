@@ -17,16 +17,16 @@ root.render(
 export const navLinks = [
   {id: "home",
 title: "Home"}, 
-  {id: "Services",
-title: "Services"}, 
+//   {id: "Services",
+// title: "Services"}, 
   {id: "Products",
 title: "Products"},
 {id: "Sign Up",
 title: "Sign Up"},
 {id: "Login",
 title: "Login"} ,
-{id: "About",
-title: "About"}  
+// {id: "About",
+// title: "About"}  
 ];
 
 // If you want to start measuring performance in your app, pass a function

@@ -28,7 +28,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='bg-purple-800 bg-opacity-50 my-20' >
+        <nav className='bg-purple-800 bg-opacity-50 lg:my-20' >
 
             {/* navbar for pc view */}
         <div className='bg-opacity-40 fixed top-0 z-50 backdrop-blur-lg rounded shadow-2xl lg:w-full sm:flex hidden bg-black  navbar bg-purple-800  h-20'>
@@ -49,19 +49,6 @@ const Navbar = () => {
     <li><a>Miraz 1.0</a></li>
   </ul>
 </div>
-    
-
-    
-    
-        {/* <select
-        className="transparent-bg"
-        name="Products"
-        id="products"
-        >
-        <option className="bg-purple-700" value="">Products</option>
-        <option className="bg-purple-700" value="">Shield 52</option>
-        <option className="bg-purple-700" value="">Miraz 1.0</option>
-        </select> */}
 
     <Link to='/Signup'>Sign Up</Link>
     <Link to='/Login'>Login</Link>

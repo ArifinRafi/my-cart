@@ -8,7 +8,7 @@ import Intro from '../components/Intro';
 
 const Home = () => {
     return (
-        <div className='bg-black'>
+        <div>
            <Hero></Hero>
            <Intro></Intro>
            <Stats></Stats>
