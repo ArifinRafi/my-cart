@@ -1,12 +1,22 @@
 import React from 'react';
 import logo from '../assets/roboway_logo.png'
+import {FaFacebook} from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import {MdOutlineSettingsSuggest, MdOutlineAppShortcut} from 'react-icons/md'
 
 const Footer = () => {
     return (
         <footer className="footer p-10 bg-opacity-40  bg-purple-800 bg-opacity-60 text-white ">
   <div>
-    <img src={logo} className='w-[145px] h-[45px]' alt="" />
+    <img src={logo} className='w-[218px] h-[65px]' alt="" />
     <p>All rights reserved by Roboway Technologies 2023</p>
+    <div className='grid grid-cols-3'>
+    <FaFacebook className='mx-[10px]' size='30px' color=''></FaFacebook>
+    <FaInstagram className='mx-[10%]' size='30px' color=''></FaInstagram>
+    <FaLinkedin className='mx-[10%]' size='30px' color=''></FaLinkedin>
+    </div>
+    
   </div> 
   <div>
     <span className="footer-title">Services</span> 

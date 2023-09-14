@@ -3,6 +3,7 @@ import mahbub from '../assets/mahbub.jpg'
 import labib from '../assets/labib.jpg'
 
 const Reviews = () => {
+  const review = [{name:'Mahbub Ul Haque', comments:'They are very energectic and pationate about their work. Lets hope for the best for Roboway'}, {name:'Labib Muhannad', comments:'We took a customized solution for our business from roboway. Their service is extremely good'}, {name:'Abrarul Rohan', comments:'I came to know about through online workplace since 1 year ago. The team maintained well communication and delivered my desired solution before the deadline.'}];
     return (
         <section class="text-neutral-700 dark:text-neutral-300 py-12 ">
   <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
@@ -19,12 +20,12 @@ const Reviews = () => {
         class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
         <div class="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
         <div
-          class="mx-auto -mt-12 w-20 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
+          class="mx-auto -mt-12 w-20  overflow-hidden rounded-full border-2 border-white  dark:border-neutral-800 ">
           <img
             src={mahbub} />
         </div>
         <div class="p-6">
-          <h4 class=" text-2xl font-semibold">Mahbub Ul Haque</h4>
+          <h4 class=" text-2xl font-semibold">{review[0].name}</h4>
           <p className='mb-4 text-sm'>Embedded System Engineer, Palki Motors</p>
           <hr />
           <p class="mt-4">

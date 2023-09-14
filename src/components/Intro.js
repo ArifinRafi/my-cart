@@ -1,20 +1,17 @@
 import React from 'react';
 import { animate, motion} from 'framer-motion'
 import {FaRobot, FaAndroid} from 'react-icons/fa'
-import {LuAppWindow} from 'react-icons/lu'
+import {LuBrainCircuit} from 'react-icons/lu'
+import {MdOutlineSettingsSuggest, MdOutlineAppShortcut} from 'react-icons/md'
 
 const divElement = [
-    {iconImage: <FaRobot size='40px' color=''></FaRobot>,
-    name:'Providing Embedded solutions'},
-    {iconImage: <FaAndroid size='40px'></FaAndroid>,
-    name:'Providing Embedded solutions'},
-    {iconImage: <LuAppWindow size='40px'></LuAppWindow>,
-    name:'Providing Embedded solutions'}
-    
-    
-    
-    
-]
+    {iconImage: <MdOutlineSettingsSuggest size='40px'></MdOutlineSettingsSuggest>,
+    name:'Embedded Systems '},
+    {iconImage: <MdOutlineAppShortcut size='40px'></MdOutlineAppShortcut>,
+    name:'Web/App based Solutions'},
+    {iconImage: <LuBrainCircuit size='40px'></LuBrainCircuit>,
+    name:'ML/AI based Solutions'}
+ ]
 
 
 const Intro = () => {
@@ -52,7 +49,7 @@ const Intro = () => {
     
     return (
         <div className='px-4'>
-            <div className=' bg-slate-900 w-full text-white lg:h-[450px] '>
+            <div className=' bg-base-300 w-full text-white lg:h-[450px] '>
             <motion.div
             variants={fadeInAnimation}
             initial='initial'
@@ -62,17 +59,17 @@ const Intro = () => {
             <p className='grid text-lg justify-center mt-12 '>Our primary concern is to find a solution using the cutting edge technology for you</p>
             </motion.div>
 
-            <div className='lg:flex my-24  justify-between mx-4 text-xl font-bold'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 my-24  justify-items-center mx-4 text-xl font-bold'>
                 {divElement.map((divElement)=> (
                     <motion.div variants={fadeInfromleft} key={divElement.name}
                     initial='initial'
                     whileInView={'animate'}
                     //use viewport={{once:ture}}
-                    ><div className='flex justify-center'>
-                        <div className='mx-4'>
+                    ><div className='grid grid-cols-2 justify-items-center'>
+                        <div className='mx-0'>
                          {divElement.iconImage} 
                         </div>
-                        <div className='my-2'>
+                        <div className='my-1'>
                          {divElement.name}  
                         </div>
                     
@@ -83,7 +80,7 @@ const Intro = () => {
                 ))}
             </div>
 
-            <div className='grid justify-center py-4'><button className='btn btn-primary grid justify-center'>Have a project? Let's discuss</button></div>
+            <div className='grid justify-center py-4'><button className='btn bg-purple-800  hover:bg-purple-900 text-white rounded-md grid justify-center'>Have a project? Let's discuss</button></div>
         </div>
         </div>
     );

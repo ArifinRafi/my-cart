@@ -8,7 +8,7 @@ import Intro from '../components/Intro';
 
 const Home = () => {
     return (
-        <div>
+        <div className='max-w-screen-xl mx-auto'>
            <Hero></Hero>
            <Intro></Intro>
            <Stats></Stats>

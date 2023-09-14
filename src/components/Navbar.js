@@ -31,27 +31,25 @@ const Navbar = () => {
         <nav className='bg-purple-800 bg-opacity-50 lg:my-20' >
 
             {/* navbar for pc view */}
-        <div className='bg-opacity-40 fixed top-0 z-50 backdrop-blur-lg rounded shadow-2xl lg:w-full sm:flex hidden bg-black  navbar bg-purple-800  h-20'>
+        <div className='bg-opacity-40 fixed top-0 z-50 backdrop-blur-lg rounded shadow-2xl max-w-full sm:flex hidden bg-black  navbar bg-purple-800  h-20'>
 
-        <img className='w-[145px] h-[45px]' src={logo} alt="" />
+        <img className='w-[185px] h-[50px]' src={logo} alt="" />
 
 <ul className='list-none flex justify-start px-8 items-center flex-1 text-white'>
 
    <li className='flex justify-evenly cursor-pointer text-[16px] gap-5 font-semibold'>
    <Link to='/' >Home</Link>
     <Link to='/'>Services</Link>
+    <Link to='/Products'>Products</Link>
     
-    <div className="dropdown dropdown-bottom ">
+    {/* <div className="dropdown dropdown-bottom ">
   <label tabIndex={0} className="transparent-bg">Products</label>
-  <ul tabIndex={0} className="dropdown-content z-[1] menu  shadow bg-purple-800 opacity-50 rounded-box w-52">
+  <ul tabIndex={0} className="dropdown-content z-[1] menu  shadow bg-purple-800 opacity-50 rounded-xl w-52">
     <li><a>Pixi Version 1.0</a></li>
     <li><a>Shield 52</a></li>
     <li><a>Miraz 1.0</a></li>
   </ul>
-</div>
-
-    <Link to='/Signup'>Sign Up</Link>
-    <Link to='/Login'>Login</Link>
+</div>   */}
     <Link to='/'>About</Link>
    </li> 
 </ul>
