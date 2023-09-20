@@ -50,7 +50,9 @@ const Navbar = () => {
     <li><a>Miraz 1.0</a></li>
   </ul>
 </div>   */}
+<Link to='/services'>Services</Link>
     <Link to='/'>About</Link>
+    
    </li> 
 </ul>
 {/* <p className='px-10 flex justiy-items-end'>{user?.email}</p>

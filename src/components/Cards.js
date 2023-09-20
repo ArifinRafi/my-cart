@@ -15,7 +15,7 @@ const Cards = () => {
 
         <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center my-20'>
             {products.map((products)=>(
-                <div className="lg:card w-96 my-12 h-[5/6] rounded-xl lg:p-0 sm:p-8  bg-base-300 shadow-xl">
+                <div className="lg:card w-96 my-12 h-[5/6] rounded-xl lg:p-0 sm:p-8  bg-base-200 bg-opacity-50 shadow-xl">
                 <figure><img src={products.img} alt="" className='w-full rounded'/></figure>
                 <div className="card-body ">
                     

@@ -48,14 +48,14 @@ const Intro = () => {
     
     
     return (
-        <div className='px-4'>
-            <div className=' bg-base-300 w-full text-white lg:h-[450px] '>
+        <div className='py-8'>
+            <div className=' bg-base-200 w-full text-white lg:h-[450px] '>
             <motion.div
             variants={fadeInAnimation}
             initial='initial'
             whileInView={'animate'}
             >
-            <h1 className='text-3xl font-bold grid justify-center '>What we do</h1>
+            <h1 className='text-3xl font-bold pt-4 grid justify-center '>What we do</h1>
             <p className='grid text-lg justify-center mt-12 '>Our primary concern is to find a solution using the cutting edge technology for you</p>
             </motion.div>
 

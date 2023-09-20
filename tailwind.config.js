@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   daisyui: {
-    themes: [ "black"],
+    themes: [ "dracula"],
   },
   theme: {
     extend: {},
   },
   plugins: [require("daisyui")],
   
-}
+});

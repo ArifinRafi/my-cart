@@ -1,22 +1,20 @@
 import React from 'react';
 import shield_cover from '../assets/smart_home.jpg'
+import {CarouselTransition} from '../components/Slider'
 
 const Service = () => {
     return (
-        <section className="overflow-hidden sm:grid grid-cols-1 lg:grid-cols-2 rounded-2xl">
-  <div className="p-8 md:p-12 lg:px-16 lg:py-24 bg-base-100">
+        <section className="overflow-hidden bg-base-200 sm:grid grid-cols-1 lg:grid-cols-2">
+  <div className="p-8 md:p-12 lg:px-16 lg:py-24 bg-base-200">
     <div
       className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"
     >
       <h2 className="text-2xl font-bold text-white md:text-3xl">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+        Our Achievements
       </h2>
 
-      <p className="hidden md:mt-4 md:block text-white ">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
-        tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
-        fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
-        duis.
+      <p className=" md:mt-4 md:block text-white ">
+        We have the most experienced people in our team who competed worldwide in different international and national competitions in previous years. Lets make the 4th Industrial Revolution together
       </p>
 
       <div className="mt-4 md:mt-8">
@@ -30,11 +28,9 @@ const Service = () => {
     </div>
   </div>
 
-  <img
-    alt="Student"
-    src={shield_cover}
-    className=" w-full opacity-80 h-full"
-  />
+  <div>
+      <CarouselTransition/>
+  </div>
 </section>
     );
 };
