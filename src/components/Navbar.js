@@ -28,7 +28,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar fixed top-0 z-50 bg-[#38296B] bg-opacity-90 text-white shadow-2xl ">
+        <div className="navbar  fixed top-0 z-30  bg-[#38296B] bg-opacity-90 text-white shadow-2xl ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,8 +37,8 @@ const Navbar = () => {
       <ul tabIndex={0} className="menu bg-blue-900  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-xl w-96">
       <Link to='/' className='btn btn-ghost'>Home</Link>
       <Link to='/About' className='btn btn-ghost'>About</Link>
-      <Link to='/' className='btn btn-ghost'>Products</Link>
-      <Link to='/' className='btn btn-ghost'>Services</Link>
+      <Link to='/products' className='btn btn-ghost'>Products</Link>
+      <Link to='/services' className='btn btn-ghost'>Services</Link>
         {/* <li>
           <a>Services</a>
           <ul className="p-2 ">
@@ -61,6 +61,7 @@ const Navbar = () => {
           <ul className="p-2 text-black">
             <li><Link to='Web'><a>Web Development</a></Link></li>
             <li><Link to='mobile'><a>Mobile App Development</a></Link></li>
+            <li><Link to='/services'><a>All Services</a></Link></li>
           </ul>
         </details>
       </li>
@@ -70,6 +71,7 @@ const Navbar = () => {
           <ul className="p-2 text-black">
             <li><a>Pixi Version 1.0</a></li>
             <li><a>Joltorongo Version 1.0</a></li>
+            <li><Link to='/products'><a>All Products</a></Link></li>
           </ul>
         </details>
       </li>
