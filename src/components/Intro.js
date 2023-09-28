@@ -19,12 +19,12 @@ const Intro = () => {
         initial:{
             opacity:0, 
             y:100,
-            x:-200
+            
         },
         animate:{
             opacity:1, 
             y:0,
-            x:0,
+            
         transition:{ 
             delay: 0.20, 
             duration: 1   
@@ -48,8 +48,8 @@ const Intro = () => {
     
     
     return (
-        <div className='py-8'>
-            <div className=' bg-base-200 w-full text-white lg:h-[450px] '>
+        <div className=''>
+            <div className=' bg-base-200 w-full text-black lg:h-[450px] '>
             <motion.div
             variants={fadeInAnimation}
             initial='initial'
@@ -59,7 +59,7 @@ const Intro = () => {
             <p className='grid text-lg justify-center mt-12 '>Our primary concern is to find a solution using the cutting edge technology for you</p>
             </motion.div>
 
-            <div className='grid lg:grid-cols-3 grid-cols-1 my-24  justify-items-center mx-4 text-xl font-bold'>
+            <div className='grid lg:grid-cols-3 text-[#38296B] grid-cols-1 my-24  justify-items-center mx-4 text-xl font-bold'>
                 {divElement.map((divElement)=> (
                     <motion.div variants={fadeInfromleft} key={divElement.name}
                     initial='initial'
@@ -80,7 +80,7 @@ const Intro = () => {
                 ))}
             </div>
 
-            <div className='grid justify-center py-4'><button className='btn bg-purple-800  hover:bg-purple-900 text-white rounded-md grid justify-center'>Have a project? Let's discuss</button></div>
+            <div className='grid justify-center '><button className='btn bg-[#38296B]  hover:bg-purple-900 text-white rounded-md grid justify-center'>Have a project? Let's discuss</button></div>
         </div>
         </div>
     );

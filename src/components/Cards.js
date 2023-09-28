@@ -2,6 +2,7 @@ import React from 'react';
 import pixi from '../assets/pixi2.jpg'
 import rouv_black from '../assets/rouv_black.JPG';
 import helmet from '../assets/helmet1.png';
+import vms from '../assets/vms.jpg'
 import { Link, NavLink } from 'react-router-dom';
 
 
@@ -9,7 +10,8 @@ const Cards = () => {
     const products = [
         {img:pixi, name: 'Pixi Version 1.0', description:'An AI powered Humanoid robot for your business'},
         {img:rouv_black, name: 'Joltorongo', description:'Miraz is an remotely operated underwater Vehicle(ROUV) for underwater search and rescue missions and marine life research'},
-        {img:helmet, name: 'Shield 52', description:'A smart IoT based solution for construction workers and heavy duty workers'} 
+        {img:helmet, name: 'Shield 52', description:'A smart IoT based solution for construction workers and heavy duty workers', 
+        img:vms, name: 'Shield 52', description:'A smart IoT based solution for construction workers and heavy duty workers'} 
     ]
     return (
 
@@ -24,7 +26,7 @@ const Cards = () => {
                     <p>{products.description} </p>
                  
                 <div className="card-actions justify-center">
-                <button className="btn btn bg-purple-700 text-white rounded-md hover:bg-purple-900">Know More!</button>
+                <button className="btn btn bg-[#38296B] text-white rounded-md hover:bg-purple-900">Know More!</button>
                 
                 </div>
                 </div>

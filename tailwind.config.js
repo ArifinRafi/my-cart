@@ -5,7 +5,7 @@ module.exports = withMT({
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   daisyui: {
-    themes: [ "dracula"],
+    themes: [ "cupcake"],
   },
   theme: {
     extend: {},

@@ -7,8 +7,8 @@ const Reviews = () => {
     return (
         <section class="text-neutral-700 dark:text-neutral-300 py-12 ">
   <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-    <h3 class="mb-6 text-3xl text-white font-bold">Testimonials</h3>
-    <p class="mb-6 pb-2 md:mb-12 text-white md:pb-0">
+    <h3 class="mb-6 text-3xl  font-bold">Testimonials</h3>
+    <p class="mb-6 pb-2 md:mb-12 md:pb-0">
       Let's see what our hounorable customers say about us
     </p>
   </div>

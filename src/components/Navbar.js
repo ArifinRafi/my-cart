@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import {navLinks} from '../index'
-import logo from '../assets/roboway_logo.png'
+import logo from '../assets/robowaylabs.png'
 import menu from '../assets/menu.svg'
 import close from '../assets/close.svg'
 import '../css/navbar.css'
@@ -28,69 +28,59 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='bg-purple-800 bg-opacity-50 lg:my-20' >
-
-            {/* navbar for pc view */}
-        <div className='bg-opacity-40 fixed top-0 z-50 backdrop-blur-lg rounded shadow-2xl max-w-full sm:flex hidden bg-black  navbar bg-purple-800  h-20'>
-
-        <img className='w-[185px] h-[50px]' src={logo} alt="" />
-
-<ul className='list-none flex justify-start px-8 items-center flex-1 text-white'>
-
-   <li className='flex justify-evenly cursor-pointer text-[16px] gap-5 font-semibold'>
-   <Link to='/' >Home</Link>
-    <Link to='/'>Services</Link>
-    <Link to='/Products'>Products</Link>
-    
-    {/* <div className="dropdown dropdown-bottom ">
-  <label tabIndex={0} className="transparent-bg">Products</label>
-  <ul tabIndex={0} className="dropdown-content z-[1] menu  shadow bg-purple-800 opacity-50 rounded-xl w-52">
-    <li><a>Pixi Version 1.0</a></li>
-    <li><a>Shield 52</a></li>
-    <li><a>Miraz 1.0</a></li>
-  </ul>
-</div>   */}
-<Link to='/services'>Services</Link>
-    <Link to='/'>About</Link>
-    
-   </li> 
-</ul>
-{/* <p className='px-10 flex justiy-items-end'>{user?.email}</p>
-<button onClick={handleLogout} className='btn bg-purple-700 text-white hover:bg-purple-600 rounded '>Log Out</button> */}
+        <div className="navbar fixed top-0 z-50 bg-[#38296B] bg-opacity-90 text-white shadow-2xl ">
+  <div className="navbar-start">
+    <div className="dropdown">
+      <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabIndex={0} className="menu bg-blue-900  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-xl w-96">
+      <Link to='/' className='btn btn-ghost'>Home</Link>
+      <Link to='/About' className='btn btn-ghost'>About</Link>
+      <Link to='/' className='btn btn-ghost'>Products</Link>
+      <Link to='/' className='btn btn-ghost'>Services</Link>
+        {/* <li>
+          <a>Services</a>
+          <ul className="p-2 ">
+            <li><a>Submenu 1</a></li>
+            <li><a>Submenu 2</a></li>
+          </ul>
+        </li>
+        <li><a>Item 3</a></li> */}
+      </ul>
     </div>
-           {/* navbar for small devices */}
-        <div className='grid sm:hidden grid-col-2  '>
-        <div className='grid justify-items-center'>
-            <img src={logo} className='w-[200px] mobileLogo ' alt="" />
-        </div>
-
-        <div className='sm:hidden flex flex-1 justify-end items-center px-5 '>
-        
-        <img src={toggle ? close : menu} alt="menu"
-        className=' menupos w-[28px] h-[28px]  object-contain' onClick={()=> setToggle((prev)=>!prev)} />
-            <div className={`${toggle ? 'flex' : 'hidden'}   bg-purple-800 bg-opacity-50 right-0 w-full  h-2/4  top-20 absolute  min-w-[140px] rounded-xl `}>
-            <ul className='list-none flex flex-col justify-start px-8 items-center flex-1'>
-
-            {navLinks.map((nav, index) => (
-                <li key={nav.id} className={`font-poppins font-normal cursor-pointer font-semibold text-[16px] text-white mb-5 lg:mx-4`}>
-    <a href={`${nav.id}`}>
-        {nav.title}
-    </a>
-    
-    
-                    </li>
-                
-            ))}
-
-                {/* Button for signin and signout */}
-            {/* <p className='px-10 flex justiy-items-end'>{user?.email}</p>
-<button onClick={handleLogout} className='btn'>Log Out</button> */}
-            </ul>
-            
-        </div>
-    </div>
-    </div>
-   </nav>      
+    <a className="btn btn-ghost hidden sm:block normal-case text-xl"><img src={logo} className='w-[140px] h-[140px] logoPosition' alt="" /></a>
+    <a className="btn btn-ghost sm:hidden  mt-2 mx-16"><img src={logo} className='w-[100px] h-[120px] logoPosition' alt="" /></a>
+  </div>
+  <div className="navbar-center h-16 font-semibold hidden  lg:flex">
+    <ul className="menu text-[18px]  menu-horizontal px-1">
+      <Link to='/' className='btn btn-ghost'>Home</Link>
+      <li tabIndex={0}>
+        <details>
+          <summary className='btn btn-ghost mt-2'>Services</summary>
+          <ul className="p-2 text-black">
+            <li><Link to='Web'><a>Web Development</a></Link></li>
+            <li><Link to='mobile'><a>Mobile App Development</a></Link></li>
+          </ul>
+        </details>
+      </li>
+      <li tabIndex={0}>
+        <details>
+          <summary className='btn btn-ghost mt-2' >Products</summary>
+          <ul className="p-2 text-black">
+            <li><a>Pixi Version 1.0</a></li>
+            <li><a>Joltorongo Version 1.0</a></li>
+          </ul>
+        </details>
+      </li>
+      
+      <Link to='/About' className='btn btn-ghost'>About</Link>
+    </ul>
+  </div>
+  <div className="navbar-end">
+    {/* <a className="btn">Button</a> */}
+  </div>
+</div>     
     );
 };
 

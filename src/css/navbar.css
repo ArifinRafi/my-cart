@@ -1,10 +1,10 @@
-.menupos{
+.logoPosition{
     position: relative;
-    bottom: 90%;
+    bottom: 95%;
 }
 .mobileLogo{
     position: relative;
-    top: 20%;
+    top: -10%;
 }
 .transparent-bg{
     background-color: transparent;

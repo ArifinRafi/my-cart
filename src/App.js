@@ -9,6 +9,9 @@ import Signup from './pages/Signup'
 import OrdersForm from './pages/OrdersForm';
 import Cards from './components/Cards';
 import CustomerForm from './components/CustomerForm';
+import About from './pages/About'
+import { Web } from './pages/Web';
+import { MobileApp } from './pages/MobileApp';
 
 
 
@@ -25,7 +28,11 @@ function App() {
     {path:'/Signup', element: <Signup></Signup>},
     {path:'/OrderForm', element: <OrdersForm></OrdersForm>},
     {path:'/Products', element: <Cards></Cards>},
-    {path:'/Form', element: <CustomerForm></CustomerForm>}
+    {path:'/Form', element: <CustomerForm></CustomerForm>},
+    {path:'/About', element: <About></About>},
+    {path:'/Web', element: <Web></Web>},
+    {path:'/mobile', element: <MobileApp></MobileApp>}
+    
 
     
   ]}

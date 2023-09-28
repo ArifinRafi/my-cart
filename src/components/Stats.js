@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
     return (
-  <div className="shadow  grid grid-cols-1 lg:grid-cols-3 my-10 bg-base-200">
+  <div className="shadow-2xl text-black  grid grid-cols-1 lg:grid-cols-3 my-10 bg-base-200">
   
   <div className="stat place-items-center">
     <div className="stat-title">Clients</div>
