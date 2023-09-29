@@ -3,7 +3,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 
 export function CarouselWithContent({ slides }) {
   return (
-    <Carousel className="h-[600px]">
+    <Carousel className="lg:h-[600px]">
       {slides.map((slide, index) => (
         <div key={index} className="relative h-full w-full">
           <img src={slide.imgSrc} alt={`image ${index + 1}`} className="h-full w-full object-cover" />
