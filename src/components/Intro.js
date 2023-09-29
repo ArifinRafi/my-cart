@@ -53,8 +53,7 @@ const Intro = () => {
             <motion.div
             variants={fadeInAnimation}
             initial='initial'
-            whileInView={'animate'}
-            >
+            whileInView={'animate'}>
             <h1 className='text-3xl font-bold pt-4 grid justify-center '>What we do</h1>
             <p className='grid text-lg justify-center mt-12 '>Our primary concern is to find a solution using the cutting edge technology for you</p>
             </motion.div>

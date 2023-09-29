@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { animate, motion} from 'framer-motion';
 
 
-const Cards = () => {
+const Products = () => {
     const products = [
         {img:pixi, name: 'Pixi Version 1.0', description:'An AI powered Humanoid robot for your business'},
         {img:rouv_black, name: 'Joltorongo', description:'Miraz is an remotely operated underwater Vehicle(ROUV) for underwater search and rescue missions and marine life research'},
@@ -17,7 +17,7 @@ const Cards = () => {
     const fadeInfromRight = {
         initial:{
             opacity:0, 
-            y:110,
+            y:100,
             
         },
         animate:{
@@ -63,4 +63,4 @@ const Cards = () => {
     );
 };
 
-export default Cards;
+export default Products;

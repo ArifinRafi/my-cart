@@ -1,11 +1,30 @@
 import React from 'react';
 import mahbub from '../assets/mahbub.jpg'
-import labib from '../assets/labib.jpg'
+import labib from '../assets/labib.jpg';
+import { animate, motion} from 'framer-motion';
 
 const Reviews = () => {
   const review = [{name:'Mahbub Ul Haque', comments:'They are very energectic and pationate about their work. Lets hope for the best for Roboway'}, {name:'Labib Muhannad', comments:'We took a customized solution for our business from roboway. Their service is extremely good'}, {name:'Abrarul Rohan', comments:'I came to know about through online workplace since 1 year ago. The team maintained well communication and delivered my desired solution before the deadline.'}];
-    return (
-        <section class="text-neutral-700 dark:text-neutral-300 py-12 ">
+  const fadeInfromRight = {
+    initial:{
+        opacity:0, 
+        y:200,
+        
+    },
+    animate:{
+        opacity:1, 
+        y:0,
+        
+    transition:{ 
+        delay: 0.20, 
+        duration: 1   
+    } ,
+}
+} 
+  return (
+        <motion.section class="text-neutral-700 dark:text-neutral-300 py-12 " variants={fadeInfromRight}
+        initial='initial'
+        whileInView={'animate'}>
   <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
     <h3 class="mb-6 text-3xl  font-bold">Testimonials</h3>
     <p class="mb-6 pb-2 md:mb-12 md:pb-0">
@@ -100,7 +119,7 @@ const Reviews = () => {
       </div>
     </div>
   </div>
-</section>
+</motion.section>
     );
 };
 

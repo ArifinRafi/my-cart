@@ -1,23 +1,18 @@
 import React from 'react';
-import pixi from '../assets/pixi2.jpg'
-import rouv_black from '../assets/rouv_black.JPG';
-import helmet from '../assets/helmet1.png';
-import vms from '../assets/vms.jpg'
+import cover1 from '../assets/cover2.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import { animate, motion} from 'framer-motion';
 
 
-const Cards = () => {
+const Services = () => {
     const products = [
-        {img:pixi, name: 'Pixi Version 1.0', description:'An AI powered Humanoid robot for your business'},
-        {img:rouv_black, name: 'Joltorongo', description:'Miraz is an remotely operated underwater Vehicle(ROUV) for underwater search and rescue missions and marine life research'},
-        {img:helmet, name: 'Shield 52', description:'A smart IoT based solution for construction workers and heavy duty workers', 
-        img:vms, name: 'Shield 52', description:'A smart IoT based solution for construction workers and heavy duty workers'} 
+        {img:cover1, name: 'Web Development', description:'An AI powered Humanoid robot for your business', links:'/Web'},
+        {img:cover1, name: 'MobileApp Development', description:'Miraz is an remotely operated underwater Vehicle(ROUV) for underwater search and rescue missions and marine life research', links:'/mobile'}
     ];
     const fadeInfromRight = {
         initial:{
             opacity:0, 
-            y:110,
+            y:200,
             
         },
         animate:{
@@ -26,14 +21,14 @@ const Cards = () => {
             
         transition:{ 
             delay: 0.20, 
-            duration: 1   
+            duration: 0.1   
         } ,
     }
     }
     return (
 
         
-        <motion.div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center my-20' variants={fadeInfromRight}
+        <motion.div className='grid grid-cols-1 lg:grid-cols-2 max-w-2lg lg:mx-96 justify-items-center my-20' variants={fadeInfromRight}
   initial='initial'
   whileInView={'animate'}>
             {products.map((products)=>(
@@ -48,7 +43,7 @@ const Cards = () => {
                     <p>{products.description} </p>
                  
                 <div className="card-actions justify-center">
-                <button className="btn btn bg-[#38296B] text-white rounded-md hover:bg-purple-900">Know More!</button>
+                <Link to={products.links}><button className="btn btn bg-[#38296B] text-white rounded-md hover:bg-purple-900">Know More!</button></Link>
                 
                 </div>
                 </motion.div>
@@ -63,4 +58,4 @@ const Cards = () => {
     );
 };
 
-export default Cards;
+export default Services;

@@ -12,6 +12,8 @@ import CustomerForm from './components/CustomerForm';
 import About from './pages/About'
 import { Web } from './pages/Web';
 import { MobileApp } from './pages/MobileApp';
+import Services from './pages/Services';
+import Products from './pages/Products';
 
 
 
@@ -31,7 +33,9 @@ function App() {
     {path:'/Form', element: <CustomerForm></CustomerForm>},
     {path:'/About', element: <About></About>},
     {path:'/Web', element: <Web></Web>},
-    {path:'/mobile', element: <MobileApp></MobileApp>}
+    {path:'/mobile', element: <MobileApp></MobileApp>},
+    {path:'/services', element: <Services></Services>},
+    {path:'/products', element: <Products></Products>}
     
 
     
