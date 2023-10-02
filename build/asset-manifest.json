@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d16de9b2.css",
-    "main.js": "/static/js/main.5e6afc52.js",
+    "main.js": "/static/js/main.32e0c6b9.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/roboway_cover.png": "/static/media/roboway_cover.9d5e2f95446edaf706b6.png",
     "static/media/moboapp.jpg": "/static/media/moboapp.060e4d4b8d9297a1c529.jpg",
@@ -24,17 +24,18 @@
     "static/media/rouv_black.JPG": "/static/media/rouv_black.06ccaacdb3b6903a953c.JPG",
     "static/media/mahbub.jpg": "/static/media/mahbub.2703560a096b74ef4840.jpg",
     "static/media/robowaylabs.png": "/static/media/robowaylabs.0512d1807a7f4c527968.png",
+    "static/media/amanto.jpg": "/static/media/amanto.1ccf9b68aa5094349995.jpg",
     "static/media/express.png": "/static/media/express.e3d4f9e5c8b469e45838.png",
     "static/media/mongodb.svg": "/static/media/mongodb.d89a6eebb2b81e487ffc99f69a3f6ea4.svg",
     "static/media/close.svg": "/static/media/close.4b1cc5d063959cf86b7849aef0c24c63.svg",
     "static/media/menu.svg": "/static/media/menu.773d1f3d335d2a46203de2be7f4f4e19.svg",
     "index.html": "/index.html",
     "main.d16de9b2.css.map": "/static/css/main.d16de9b2.css.map",
-    "main.5e6afc52.js.map": "/static/js/main.5e6afc52.js.map",
+    "main.32e0c6b9.js.map": "/static/js/main.32e0c6b9.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d16de9b2.css",
-    "static/js/main.5e6afc52.js"
+    "static/js/main.32e0c6b9.js"
   ]
 }
