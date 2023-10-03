@@ -1,12 +1,13 @@
 import React from 'react';
-import cover1 from '../assets/cover2.jpg'
+import cover1 from '../assets/moboapp.jpg'
+import cover2 from '../assets/webdev.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import { animate, motion} from 'framer-motion';
 
 
 const Services = () => {
     const products = [
-        {img:cover1, name: 'Web Development', description:'An AI powered Humanoid robot for your business', links:'/Web'},
+        {img:cover2, name: 'Web Development', description:'An AI powered Humanoid robot for your business', links:'/Web'},
         {img:cover1, name: 'MobileApp Development', description:'Miraz is an remotely operated underwater Vehicle(ROUV) for underwater search and rescue missions and marine life research', links:'/mobile'}
     ];
     const fadeInfromRight = {
@@ -32,7 +33,7 @@ const Services = () => {
   initial='initial'
   whileInView={'animate'}>
             {products.map((products)=>(
-                <div className="lg:card w-96 my-12 h-[5/6] rounded-xl lg:p-0 sm:p-8  bg-base-200 bg-opacity-50 shadow-xl">
+                <div className="lg:card w-96 my-12  h-[5/6] rounded-xl lg:mx-4 sm:p-8  bg-base-200 bg-opacity-50 shadow-xl">
                 <figure><img src={products.img} alt="" className='w-full rounded'/></figure>
                 <motion.div className="card-body" variants={fadeInfromRight}
   initial='initial'

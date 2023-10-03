@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Typography, Button } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 
 export function CarouselWithContent({ slides }) {
   return (
@@ -25,10 +26,12 @@ export function CarouselWithContent({ slides }) {
               </Typography>
               <div className="flex justify-center gap-2">
                 <Button size="lg" color="white">
-                  {slide.exploreLabel}
+                  
+                  <Link to='Products'>{slide.exploreLabel}</Link>
                 </Button>
                 <Button size="lg" color="white" variant="text">
-                  {slide.galleryLabel}
+                <Link to='Services'>{slide.galleryLabel}</Link>
+                  
                 </Button>
               </div>
             </div>
