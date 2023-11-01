@@ -3,6 +3,7 @@ import { animate, motion} from 'framer-motion'
 import {FaRobot, FaAndroid} from 'react-icons/fa'
 import {LuBrainCircuit} from 'react-icons/lu'
 import {MdOutlineSettingsSuggest, MdOutlineAppShortcut} from 'react-icons/md'
+import { Link } from 'react-router-dom';
 
 const divElement = [
     {iconImage: <MdOutlineSettingsSuggest size='40px'></MdOutlineSettingsSuggest>,
@@ -79,7 +80,7 @@ const Intro = () => {
                 ))}
             </div>
 
-            <div className='grid justify-center '><button className='btn bg-[#38296B]  hover:bg-purple-900 text-white rounded-md grid justify-center'>Have a project? Let's discuss</button></div>
+            <div className='grid justify-center '><Link to='/form' className='btn bg-[#38296B]  hover:bg-purple-900 text-white rounded-md grid justify-center'>Have a project? Let's discuss</Link></div>
         </div>
         </div>
     );

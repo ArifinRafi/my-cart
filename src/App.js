@@ -14,6 +14,7 @@ import { Web } from './pages/Web';
 import { MobileApp } from './pages/MobileApp';
 import Services from './pages/Services';
 import Products from './pages/Products';
+import Form from './components/Form';
 
 
 
@@ -30,7 +31,7 @@ function App() {
     {path:'/Signup', element: <Signup></Signup>},
     {path:'/OrderForm', element: <OrdersForm></OrdersForm>},
     {path:'/Products', element: <Cards></Cards>},
-    {path:'/Form', element: <CustomerForm></CustomerForm>},
+    {path:'/Form', element: <Form></Form>},
     {path:'/About', element: <About></About>},
     {path:'/Web', element: <Web></Web>},
     {path:'/mobile', element: <MobileApp></MobileApp>},
