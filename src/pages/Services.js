@@ -29,7 +29,7 @@ const Services = () => {
     return (
 
         
-        <motion.div className='grid grid-cols-1 lg:grid-cols-2 max-w-2lg lg:mx-96 justify-items-center my-20' variants={fadeInfromRight}
+        <motion.div className='grid grid-cols-1 lg:grid-cols-2 max-w-2lg md:mx-64  justify-items-center my-20' variants={fadeInfromRight}
   initial='initial'
   whileInView={'animate'}>
             {products.map((products)=>(
