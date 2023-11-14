@@ -2,11 +2,12 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import { StickyNavbar } from '../components/Navlist';
 
 const Main = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            <StickyNavbar />
             <Outlet></Outlet>
             <Footer></Footer>
             

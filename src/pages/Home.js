@@ -1,5 +1,4 @@
 import React from 'react';
-import Hero from '../components/Hero';
 import Stats from '../components/Stats';
 import Cards from '../components/Cards';
 import Reviews from '../components/Reviews';
@@ -10,12 +9,13 @@ import doggo1 from '../assets/dog1.jpg';
 import doggo2 from '../assets/dog2.jpg';
 import cover2 from '../assets/cover2.jpg';
 
+
 const Home = () => {
   const covers = [
     {
-      imgSrc: cover2,
+      imgSrc: doggo1,
       title: "Welcome to Roboway Labs",
-      description: "Shaping your future",
+      description: "Roboway Labs is a Robotics and tech company that gives you 360 degree tech support",
       exploreLabel: "Projects",
       galleryLabel: "Services",
     },
@@ -36,7 +36,7 @@ const Home = () => {
   ];
 
   return (
-    <div className='max-w-screen-2xl mx-auto'>
+    <div className='max-w-screen-3xl mx-auto'>
       <CarouselWithContent slides={covers} />
       <div className='max-w-screen-2xl mx-auto'>
         <Intro></Intro>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export function CarouselWithContent({ slides }) {
   return (
-    <Carousel className="lg:h-[600px]  lg:pt-20 pt-[18%]">
+    <Carousel className="lg:h-[750px]">
       {slides.map((slide, index) => (
         <div key={index} className="relative h-full w-full">
           <img src={slide.imgSrc} alt={`image ${index + 1}`} className="h-full w-full object-cover" />
@@ -25,14 +25,7 @@ export function CarouselWithContent({ slides }) {
                 {slide.description}
               </Typography>
               <div className="flex justify-center gap-2">
-                <Button size="lg" color="white">
-                  
-                  <Link to='Products'>{slide.exploreLabel}</Link>
-                </Button>
-                <Button size="lg" color="white" variant="text">
-                <Link to='Services'>{slide.galleryLabel}</Link>
-                  
-                </Button>
+                
               </div>
             </div>
           </div>
