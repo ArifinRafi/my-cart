@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export function CarouselWithContent({ slides }) {
   return (
-    <Carousel className="lg:h-[750px]">
+    <Carousel className="lg:h-[750px] lg:mt-0 mt-6">
       {slides.map((slide, index) => (
         <div key={index} className="relative h-full w-full">
           <img src={slide.imgSrc} alt={`image ${index + 1}`} className="h-full w-full object-cover" />

@@ -58,7 +58,7 @@ export function StickyNavbar() {
 
   return (
     <div className="w-full ">
-      <Navbar className="sticky fixed top-0 z-10 bg-opacity-90 w-full bg-[#38296B] top-0 z-10 lg:h-20 h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0">
+      <Navbar className="sticky fixed top-0 z-10 bg-opacity-90 w-full bg-[#38296B] top-0 z-10 lg:h-20  h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0">
         <div className="flex items-center  justify-between text-white">
           {/* Logo */}
           <Link to='/'><img className="h-[120px] mb-8 hidden lg:block logo-pos  w-[120px]" src={Logo} alt="" /></Link>
@@ -70,7 +70,7 @@ export function StickyNavbar() {
             </div>
             <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-8 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
