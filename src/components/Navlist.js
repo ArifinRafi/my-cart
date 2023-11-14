@@ -21,7 +21,7 @@ export function StickyNavbar() {
   }, []);
 
   const navList = (
-    <ul className="mt-4 mb-2 text-white flex flex-col gap-2 lg:mb-24 lg:mt-8 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-4 mb-2 text-white flex flex-col gap-2 lg:mb-24 lg:mt-6 lg:flex-row lg:items-center lg:gap-6">
       <Link to="/">Home</Link>
       
       {/* Service Items Hover */}
@@ -30,7 +30,7 @@ export function StickyNavbar() {
               <label tabIndex={0} className="text-[16px]  btn-ghost bg-transparent text-white m-1">Services</label> 
               <RiArrowDropDownLine size={'30px'}></RiArrowDropDownLine>
             </div>
-            <ul tabIndex={0} className="dropdown-content z-[1] text-black menu p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabIndex={0} className="dropdown-content z-[1] text-black menu shadow bg-base-100 rounded-box w-52">
               <li><Link to='Web'><a>Web Development</a></Link></li>
               <li><Link to='mobile'><a>Mobile App Development</a></Link></li>
               <li><Link to='/services'><a>All Services</a></Link></li>
@@ -61,7 +61,7 @@ export function StickyNavbar() {
       <Navbar className="sticky fixed top-0 z-10 bg-opacity-90 w-full bg-[#38296B] top-0 z-10 lg:h-20 h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0">
         <div className="flex items-center  justify-between text-white">
           {/* Logo */}
-          <img className="h-[120px] mb-8 hidden lg:block logo-pos  w-[120px]" src={Logo} alt="" />
+          <Link to='/'><img className="h-[120px] mb-8 hidden lg:block logo-pos  w-[120px]" src={Logo} alt="" /></Link>
 
 
           <div className="flex items-center gap-4">
