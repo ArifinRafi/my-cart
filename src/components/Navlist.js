@@ -52,7 +52,8 @@ export function StickyNavbar() {
 
       <Link className="lg:hidden" to="/services">Services</Link>
       <Link className="lg:hidden" to="/products">Products</Link>
-      <Link to="/">About Us</Link>
+      <Link to="/about">About Us</Link>
+      <Link className="btn btn-primary bg-[#38296B] border-white hover:bg-[#38286B] text-white" to="/form">Let's fix a meeting</Link>
     </ul>
   );
 

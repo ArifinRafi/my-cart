@@ -37,7 +37,7 @@ const Cards = () => {
   initial='initial'
   whileInView={'animate'}>
             {products.map((products)=>(
-                <div className="lg:card w-96 my-12 h-[5/6] rounded-xl lg:p-0 sm:p-8  bg-base-200 bg-opacity-50 shadow-xl">
+                <div className="lg:card w-96 hover:w-[400px] my-12 h-[5/6]  rounded-xl lg:p-0 sm:p-8  bg-base-200 bg-opacity-50 shadow-xl">
                 <figure><img src={products.img} alt="" className='w-full rounded'/></figure>
                 <motion.div className="card-body" variants={fadeInfromRight}
   initial='initial'
