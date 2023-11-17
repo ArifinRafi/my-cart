@@ -33,10 +33,12 @@ const Reviews = () => {
   </div>
 
   
-  <div class="grid gap-6 text-center md:grid-cols-3">
+  <div class="grid gap-6  text-center md:grid-cols-3">
     <div>
+
+      {/* customer1 */}
       <div
-        class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+        class="block hover:scale-110 duration-300 rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
         <div class="h-28 overflow-hidden rounded-t-lg bg-[#9d789b]"></div>
         <div
           class="mx-auto -mt-12 w-20  overflow-hidden rounded-full border-2 border-white  dark:border-neutral-800 ">
@@ -62,10 +64,10 @@ const Reviews = () => {
       </div>
     </div>
 
-    
+    {/* customer2 */}
     <div>
       <div
-        class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+        class="block hover:scale-110 duration-300 rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
         <div class="h-28 overflow-hidden rounded-t-lg bg-[#7a81a8]"></div>
         <div
           class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
@@ -91,10 +93,10 @@ const Reviews = () => {
       </div>
     </div>
 
-    
+    {/* customer3 */}
     <div>
       <div
-        class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
+        class="block hover:scale-110 duration-300 rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
         <div class="h-28 overflow-hidden rounded-t-lg bg-[#6d5b98]"></div>
         <div
           class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">

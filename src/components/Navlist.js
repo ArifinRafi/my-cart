@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from '../assets/robowaylabs.png'
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import '../css/Navlist.css'
@@ -12,6 +12,20 @@ import { Link } from "react-router-dom";
 
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
+  const [navbarVisible, setNavbarVisible] = useState(false);
+
+  useEffect(()=> {
+    const handleScroll =()=> {
+      const isNavbarVisible = window.scrollY>0;
+      setNavbarVisible(isNavbarVisible);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, []);
+
+  
 
   React.useEffect(() => {
     window.addEventListener(
@@ -53,13 +67,13 @@ export function StickyNavbar() {
       <Link className="lg:hidden" to="/services">Services</Link>
       <Link className="lg:hidden" to="/products">Products</Link>
       <Link to="/about">About Us</Link>
-      <Link className="btn btn-primary bg-[#38296B] border-white hover:bg-[#38286B] text-white" to="/form">Let's fix a meeting</Link>
+      <Link className="btn btn-primary bg-[#38296B] border-white hover:bg-[#38286B] text-white" to="https://arifincfe7.setmore.com?source=easyshare">Let's fix a meeting</Link>
     </ul>
   );
 
   return (
     <div className="w-full ">
-      <Navbar className="sticky fixed top-0 z-10 bg-opacity-90 w-full bg-[#38296B] top-0 z-10 lg:h-20  h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0">
+      <Navbar className={`${navbarVisible? 'bg-[#38296B]' :' bg-transparent'} absolute fixed top-0 z-10 bg-opacity-90 w-full  top-0 z-10 lg:h-20  h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0`}>
         <div className="flex items-center  justify-between text-white">
           {/* Logo */}
           <Link to='/'><img className="h-[120px] mb-8 hidden lg:block logo-pos  w-[120px]" src={Logo} alt="" /></Link>

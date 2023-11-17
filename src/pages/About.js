@@ -6,6 +6,7 @@ import Ratul from '../assets/ratul.jpg'
 import Ahnaf from '../assets/Arifin.jpg'
 import Mahbub from '../assets/mahbub.jpg'
 import Amanto from '../assets/amanto.jpg'
+import { StickyNavbar2 } from '../components/NavbarNew';
 
 const About = () => {
   const members = [
@@ -33,7 +34,10 @@ const About = () => {
   ;
 
   return (
-    <div className='my-32 max-w-screen-2xl mx-auto'>
+    
+    <div>
+      <StickyNavbar2></StickyNavbar2>
+      <div className='my-32 max-w-screen-2xl mx-auto'>
       <div>
         <section className='grid justify-items-center'>
           <h1 className='text-2xl font-bold'>About</h1>
@@ -56,6 +60,7 @@ const About = () => {
 
       </section>
       
+    </div>
     </div>
   );
 };

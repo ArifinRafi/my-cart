@@ -5,6 +5,7 @@ import helmet from '../assets/helmet1.png';
 import vms from '../assets/vms.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import { animate, motion} from 'framer-motion';
+import { StickyNavbar2 } from './NavbarNew';
 
 
 const Cards = () => {
@@ -31,13 +32,13 @@ const Cards = () => {
     }
     }
     return (
-
-        
-        <motion.div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center my-20' variants={fadeInfromRight}
+        <div>
+            
+            <motion.div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center my-20' variants={fadeInfromRight}
   initial='initial'
   whileInView={'animate'}>
             {products.map((products)=>(
-                <div className="lg:card w-96 hover:w-[400px] my-12 h-[5/6]  rounded-xl lg:p-0 sm:p-8  bg-base-200 bg-opacity-50 shadow-xl">
+                <div className="lg:card w-96 hover:w-[400px]  hover:scale-110 duration-300 my-12 h-[5/6]  rounded-xl lg:p-0 sm:p-8  bg-base-200 bg-opacity-50 shadow-xl">
                 <figure><img src={products.img} alt="" className='w-full rounded'/></figure>
                 <motion.div className="card-body" variants={fadeInfromRight}
   initial='initial'
@@ -56,6 +57,7 @@ const Cards = () => {
             ))}
             </motion.div>
 
+        </div>
             
             
         

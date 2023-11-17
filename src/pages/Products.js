@@ -5,6 +5,7 @@ import helmet from '../assets/helmet1.png';
 import vms from '../assets/vms.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import { animate, motion} from 'framer-motion';
+import { StickyNavbar2 } from '../components/NavbarNew';
 
 
 const Products = () => {
@@ -31,8 +32,9 @@ const Products = () => {
     }
     }
     return (
+        <div>
+            
 
-        
         <motion.div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center my-20' variants={fadeInfromRight}
   initial='initial'
   whileInView={'animate'}>
@@ -55,6 +57,8 @@ const Products = () => {
                 </div>
             ))}
             </motion.div>
+            
+        </div>
 
             
             

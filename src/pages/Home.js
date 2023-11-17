@@ -5,6 +5,7 @@ import Reviews from '../components/Reviews';
 import Service from '../components/Service';
 import Intro from '../components/Intro';
 import { CarouselWithContent } from '../components/NewHero';
+import VideoHero from '../components/VideoHero';
 import doggo1 from '../assets/dog1.jpg';
 import doggo2 from '../assets/dog2.jpg';
 import cover2 from '../assets/cover2.jpg';
@@ -37,7 +38,9 @@ const Home = () => {
 
   return (
     <div className='max-w-screen-3xl mx-auto'>
-      <CarouselWithContent slides={covers} />
+      <VideoHero></VideoHero>
+      {/* <CarouselWithContent slides={covers} /> */}
+      {/* <NewSlider></NewSlider> */}
       <div className='max-w-screen-2xl mx-auto'>
         <Intro></Intro>
         <Stats></Stats>
