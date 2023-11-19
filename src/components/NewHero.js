@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export function CarouselWithContent({ slides }) {
   return (
     <Carousel 
-      transition={{ autoplay: true, autoplayDelay: 5000, loop: true }}  // Adjust the autoplayDelay as needed
+      transition={{ autoplay: true, autoplayDelay: 500, loop: true }}  // Adjust the autoplayDelay as needed
       className="lg:h-[750px] lg:mt-0 mt-6"
     >
       {slides.map((slide, index) => (

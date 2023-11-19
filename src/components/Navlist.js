@@ -73,10 +73,11 @@ export function StickyNavbar() {
 
   return (
     <div className="w-full ">
-      <Navbar className={`${navbarVisible? 'bg-[#38296B]' :' bg-transparent'} absolute fixed top-0 z-10 bg-opacity-90 w-full  top-0 z-10 lg:h-20  h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0`}>
+      <Navbar className={`${navbarVisible? 'bg-[#38296B]' :'bg-[#38296B]'} absolute fixed top-0 z-10 bg-opacity-90 w-full  top-0 z-10 lg:h-20  h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0`}>
         <div className="flex items-center  justify-between text-white">
           {/* Logo */}
-          <Link to='/'><img className="h-[120px] mb-8 hidden lg:block logo-pos  w-[120px]" src={Logo} alt="" /></Link>
+          <Link to='/'><img className=" h-[80px] w-[80px] lg:h-[120px] hidden lg:block lg:mb-8 logo-pos lg:w-[120px]" src={Logo} alt="" /></Link>
+          <Link to='/'><img className=" h-[80px] w-[80px] lg:h-[120px] block ml-6 lg:hidden lg:mb-8 lg:logo-pos lg:w-[120px]" src={Logo} alt="" /></Link>
 
 
           <div className="flex items-center gap-4">

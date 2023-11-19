@@ -3,7 +3,6 @@ import cover1 from '../assets/moboapp.jpg'
 import cover2 from '../assets/webdev.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import { animate, motion} from 'framer-motion';
-import { StickyNavbar2 } from '../components/NavbarNew';
 
 
 const Services = () => {
@@ -28,9 +27,9 @@ const Services = () => {
     }
     }
     return (
-        <div>
-            <StickyNavbar2/>
-            <motion.div className='grid grid-cols-1 lg:grid-cols-2 max-w-2lg md:mx-64  justify-items-center my-20' variants={fadeInfromRight}
+
+        
+        <motion.div className='grid grid-cols-1 lg:grid-cols-2 max-w-2lg md:mx-64  justify-items-center my-20' variants={fadeInfromRight}
   initial='initial'
   whileInView={'animate'}>
             {products.map((products)=>(
@@ -52,7 +51,6 @@ const Services = () => {
                 </div>
             ))}
             </motion.div>
-        </div>
 
             
             

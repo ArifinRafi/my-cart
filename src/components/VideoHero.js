@@ -5,7 +5,8 @@ import videoBg from '../assets/coverVideo.mp4';
 const VideoHero = () => {
     return (
         <div className="relative">
-            <video className='w-full h-auto' src={videoBg} autoPlay loop muted></video>
+            <video className='w-full h-[80%]' src={videoBg} autoPlay loop muted></video>
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
             <div className='text-white absolute top-1/3 left-1/4 transform -translate-x-1/2 -translate-y-1/4 text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  text-center lg:text-left xl:text-left'>
                 Welcome to roboway labs
             </div>
