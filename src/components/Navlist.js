@@ -36,7 +36,7 @@ export function StickyNavbar() {
 
   const navList = (
     <ul className="mt-4 mb-2 text-white flex flex-col gap-2 lg:mb-24 lg:mt-6 lg:flex-row lg:items-center lg:gap-6">
-      <Link to="/">Home</Link>
+      <Link to="/" onClick={() => setOpenNav(!openNav)}>Home</Link>
       
       {/* Service Items Hover */}
       <div className="dropdown   hidden lg:block dropdown-hover mt-[2px]">
@@ -64,9 +64,9 @@ export function StickyNavbar() {
             </ul>
           </div>
 
-      <Link className="lg:hidden" to="/services">Services</Link>
-      <Link className="lg:hidden" to="/products">Products</Link>
-      <Link to="/about">About Us</Link>
+      <Link className="lg:hidden" onClick={() => setOpenNav(!openNav)} to="/services">Services</Link>
+      <Link className="lg:hidden" onClick={() => setOpenNav(!openNav)} to="/products">Products</Link>
+      <Link onClick={() => setOpenNav(!openNav)} to="/about">About Us</Link>
       <Link className="btn btn-primary bg-[#38296B] border-white hover:bg-[#38286B] text-white" to="https://arifincfe7.setmore.com?source=easyshare">Let's fix a meeting</Link>
     </ul>
   );

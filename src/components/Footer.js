@@ -24,15 +24,15 @@ const Footer = () => {
     <span className="footer-title">Services</span> 
     <Link className="link link-hover" to='Web'><a>Web Development</a></Link>
     <Link className="link link-hover" to='Mobile'><a>Mobile App Development</a></Link>
-    <Link className="link link-hover" to='Mobile'><a>ML/AI based Development</a></Link>
-    <Link className="link link-hover" to='Mobile'><a>IoT/Robotics based Solution</a></Link>
+    <Link className="link link-hover" to='ml'><a>ML/AI based Development</a></Link>
+    <Link className="link link-hover" to='ml'><a>IoT/Robotics based Solution</a></Link>
     
   </div> 
 
   <div className='mt-12' >
     <span className="footer-title">Products</span> 
-    <Link className="link link-hover" to='Web'><a>Pixi Version 1.0</a></Link>
-    <Link className="link link-hover" to='Mobile'><a>ADAAS</a></Link>
+    <Link className="link link-hover" to='products'><a>Pixi Version 1.0</a></Link>
+    <Link className="link link-hover" to='ml'><a>ADAAS</a></Link>
      
   </div> 
 
