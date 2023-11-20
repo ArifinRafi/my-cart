@@ -15,6 +15,7 @@ import { MobileApp } from './pages/MobileApp';
 import Services from './pages/Services';
 import Products from './pages/Products';
 import Form from './components/Form';
+import Ml from './pages/Ml';
 
 
 
@@ -36,7 +37,8 @@ function App() {
     {path:'/Web', element: <Web></Web>},
     {path:'/mobile', element: <MobileApp></MobileApp>},
     {path:'/services', element: <Services></Services>},
-    {path:'/products', element: <Products></Products>}
+    {path:'/products', element: <Products></Products>},
+    {path:'/ml', element: <Ml></Ml>}
     
 
     

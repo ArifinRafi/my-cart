@@ -1,14 +1,16 @@
 import React from 'react';
 import cover1 from '../assets/moboapp.jpg'
 import cover2 from '../assets/webdev.jpg'
+import cover3 from '../assets/ai_cover.jpg';
 import { Link, NavLink } from 'react-router-dom';
 import { animate, motion} from 'framer-motion';
 
 
 const Services = () => {
     const products = [
-        {img:cover2, name: 'Web Development', description:'An AI powered Humanoid robot for your business', links:'/Web'},
-        {img:cover1, name: 'MobileApp Development', description:'Miraz is an remotely operated underwater Vehicle(ROUV) for underwater search and rescue missions and marine life research', links:'/mobile'}
+        {img:cover2, name: 'Web Development', description:'We have an experience web development team to take care of your online presence', links:'/Web'},
+        {img:cover1, name: 'MobileApp Development', description:'We develop mobile applications for personal and enterprise users', links:'/mobile'},
+        {img:cover3, name: 'AI and ML based Solutions', description: 'We have a bunch of developers to design and develop Artifical Intelligence and Machine Learning based solutions', links: '/ml'}
     ];
     const fadeInfromRight = {
         initial:{
@@ -29,7 +31,7 @@ const Services = () => {
     return (
 
         
-        <motion.div className='grid grid-cols-1 lg:grid-cols-2 max-w-2lg md:mx-64  justify-items-center my-20' variants={fadeInfromRight}
+        <motion.div className='grid grid-cols-1 lg:grid-cols-3 max-w-2lg md:mx-64  justify-items-center my-20' variants={fadeInfromRight}
   initial='initial'
   whileInView={'animate'}>
             {products.map((products)=>(

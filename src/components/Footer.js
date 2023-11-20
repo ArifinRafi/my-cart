@@ -12,11 +12,11 @@ const Footer = () => {
         <footer className="footer bg-[#38296B] pl-4 lg:h-[300px] text-white ">
   <div>
     <img src={logo} className='w-[144px]   logo-bottom  h-[144px]' alt="" /> 
-    <p  className='mt-8 ml-2'>All rights reserved by Roboway Labs 2023</p>
+    <p  className='mt-8 lg:ml-0 md:ml-2'>All rights reserved by Roboway Labs 2023</p>
     <div className='grid grid-cols-3'>
-    <FaFacebook className='mx-[10px]' size='30px' color=''></FaFacebook>
-    <FaInstagram className='mx-[10%]' size='30px' color=''></FaInstagram>
-    <FaLinkedin className='mx-[10%]' size='30px' color=''></FaLinkedin>
+    <a href="https://www.facebook.com/robowaylabs"><FaFacebook className='mx-[10px]' size='30px' color=''></FaFacebook></a>
+    <a href="https://www.instagram.com/roboway_labs/"><FaInstagram className='mx-[10%]' size='30px' color=''></FaInstagram></a>
+    <a href="https://www.linkedin.com/company/robowaylabs/"><FaLinkedin className='mx-[10%]' size='30px' color=''></FaLinkedin></a>
     </div>
     
   </div> 
