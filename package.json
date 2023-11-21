@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage": "https://robowaylabs.com/",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.0.18",
