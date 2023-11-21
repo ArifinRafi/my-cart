@@ -53,7 +53,7 @@ const Intro = () => {
     
     return (
         <div className=''>
-            <div className=' bg-base-200 w-full text-black lg:h-[650px] '>
+            <div className=' bg-base-200 w-full text-black lg:h-[500px] '>
             <motion.div
             variants={fadeInAnimation}
             initial='initial'
@@ -112,7 +112,7 @@ const Intro = () => {
 
             {/* CutomerForm Button */}
 
-            <div className='grid justify-center '><Link to='/form' className='btn bg-[#38296B]  hover:bg-purple-900 text-white rounded-md grid justify-center'>Have a project? Let's discuss</Link></div>
+            <div className='grid justify-center '><Link to='https://docs.google.com/forms/d/e/1FAIpQLSeyyc0615QhJmjN5yYj9Zl_qTj7rOi5LrPwQzHFviaId8ifJw/viewform?usp=sf_link' className='btn bg-[#38296B]  hover:bg-purple-900 text-white rounded-md grid justify-center'>Have a project? Let's discuss</Link></div>
         </div>
         </div>
     );
