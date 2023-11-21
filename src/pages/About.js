@@ -3,7 +3,7 @@ import { ProfileCard } from '../components/TeamCard';
 import Arifin from '../assets/Arifin.jpg'
 import Sihab from '../assets/sihab.jpg'
 import Ratul from '../assets/ratul.jpg'
-import Ahnaf from '../assets/Arifin.jpg'
+import Ahnaf from '../assets/ahnaf.jpg'
 import Mahbub from '../assets/mahbub.jpg'
 import Amanto from '../assets/amanto.jpg'
 
@@ -14,7 +14,6 @@ const About = () => {
     { img:Mahbub, name: 'Mahbub Ul Haque', position: 'Chief Operating Officer' },
     { img:Ratul,name: 'Ratul Hasan', position: 'Chief Product Officer' },
     {img:Ahnaf, name: 'Ahnaf Akib', position: 'Accounts and Finance Executive' },
-    {img:Amanto, name: 'Amanto Amin', position: 'Marketing and Sells Executive' },
   ];
   const details=
     `At Roboway, we envision a future where automation and technology 
