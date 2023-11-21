@@ -36,8 +36,9 @@ export function StickyNavbar() {
 
   const navList = (
     <ul className="mt-4 mb-2 text-white flex flex-col gap-2 lg:mb-24 lg:mt-6 lg:flex-row lg:items-center lg:gap-6">
-      <Link to="/" onClick={() => setOpenNav(!openNav)}>Home</Link>
-      
+      <Link to="/" className="lg:hidden" onClick={() => setOpenNav(!openNav)}>Home</Link>
+      <Link to="/" className="lg:block">Home</Link>
+
       {/* Service Items Hover */}
       <div className="dropdown   hidden lg:block dropdown-hover mt-[2px]">
             <div className='flex'>
@@ -66,14 +67,15 @@ export function StickyNavbar() {
 
       <Link className="lg:hidden" onClick={() => setOpenNav(!openNav)} to="/services">Services</Link>
       <Link className="lg:hidden" onClick={() => setOpenNav(!openNav)} to="/products">Products</Link>
-      <Link onClick={() => setOpenNav(!openNav)} to="/about">About Us</Link>
+      <Link className="lg:block" to="/about">About Us</Link>
+      <Link className="lg:hidden" onClick={() => setOpenNav(!openNav)} to="/about">About Us</Link>
       <Link className="btn btn-primary bg-[#38296B] border-white hover:bg-[#38286B] text-white" to="https://arifincfe7.setmore.com?source=easyshare">Let's fix a meeting</Link>
     </ul>
   );
 
   return (
     <div className="w-full ">
-      <Navbar className={`${navbarVisible? 'bg-[#38296B]' :'bg-[#38296B]'} absolute fixed top-0 z-10 bg-opacity-90 w-full  top-0 z-10 lg:h-20  h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0`}>
+      <Navbar className= 'bg-[#38296B] absolute fixed top-0 z-10 bg-opacity-90 w-full  top-0 z-10 lg:h-20  h-max max-w-full rounded-none px-4 py-2 border-none lg:py-0'>
         <div className="flex items-center  justify-between text-white">
           {/* Logo */}
           <Link to='/'><img className=" h-[80px] w-[80px] lg:h-[120px] hidden lg:block lg:mb-8 logo-pos lg:w-[120px]" src={Logo} alt="" /></Link>
