@@ -43,10 +43,10 @@ const Footer = () => {
     <a className="link link-hover">Jobs</a> 
   </div> 
   <div className='mt-12'>
-    <span className="footer-title">Legal</span> 
-    <a className="link link-hover">Terms of use</a> 
-    <a className="link link-hover">Privacy policy</a> 
-    <a className="link link-hover">Cookie policy</a>
+    <span className="footer-title">Contact Us</span> 
+    <a className="link link-hover">Email: teamroboway@gmail.com</a> 
+    <a className="link link-hover">Phone: +8801611240524</a> 
+    <a className="link link-hover">Address: 492/20, Bashundhara gate, Dhaka</a>
   </div>
 </footer>
     );
